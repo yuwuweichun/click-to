@@ -1,0 +1,274 @@
+body{
+    background-image: url("bgc.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 100vh;
+    overflow-y: fit;
+}
+#buttonArea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    
+}
+
+
+ul{
+    list-style: none;
+}
+
+#levelOne{
+    display: none;
+}
+
+#levelOne.show{
+    display: flex;
+}
+
+#levelThreeCharacter,#levelThreeFriend,#levelThreeMessage,#levelThreeMap,#levelThreeSetting{
+    display: none;
+
+}
+#levelThreeCharacter.show,#levelThreeFriend.show,#levelThreeMessage.show,#levelThreeMap.show,#levelThreeSetting.show{
+    display: flex;
+    
+}
+
+
+
+#mainButton{
+        width: 80px;
+        height: 80px;
+        background-image: url("./svg/圆环.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        opacity: 1.0;
+        
+        
+}
+#mainButton.slideDown{
+        transform: translateY(100px);
+        transition: transform 0.8s ease;
+        
+}
+#mainButton.slideUp{
+        transform: translateY(0px);
+        transition: transform 0.6s ease;
+        
+}
+#levelTwo{
+    display: none;
+}
+#levelTwoCharacter{
+        width: 50px;
+        height: 50px;
+        background-image: url("./svg/角色.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        opacity: 0.8;
+        
+}
+
+#levelTwoFriend{
+        width: 50px;
+        height: 50px;
+        background-image: url("./svg/好友.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        opacity: 0.8;
+}
+#levelTwoMessage{
+        width: 50px;
+        height: 50px;
+        background-image: url("./svg/信息.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        opacity: 0.8;
+}
+#levelTwoMap{
+        width: 50px;
+        height: 50px;
+        background-image: url("./svg/地图.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        opacity: 0.8;
+}
+#levelTwoSetting{
+        width: 50px;
+        height: 50px;
+        background-image: url("./svg/设置.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        opacity: 0.8;
+}
+
+#levelTwoCharacter:hover,#levelTwoFriend:hover,#levelTwoMessage:hover,#levelTwoMap:hover,#levelTwoSetting:hover{
+        background-color: #F7C856;
+}
+
+#teamApplication:hover{
+        background-color: #F7C856;
+}
+
+#teamApplication{
+      display: flex;
+      background-color: #F8F0F1;
+      border: none;
+      width: 200px;  
+      height: 50px;
+      cursor: pointer;
+      border-radius: 10px;
+      margin-top: 10px;
+      
+}
+#teamApplicationSvg{
+      width: 50px;
+      height: 50px;
+      background-image: url("./svg/组队请求.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      border: none;   
+}
+
+#teamApplicationText{
+
+      display: flex;
+      height: 50px;
+      justify-content: center;
+      align-items: center;
+      margin-left: 16px;
+      font-size: 24px; 
+      
+}
+#confirmApplication{
+      display: none;
+      
+}
+
+#confirmApplication.show{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      left: 30%;
+      bottom: 30%;
+      height: 40vh;
+      width: 40vw;
+      border-radius: 10px;
+      background-color: #ebeae6;
+      opacity: 0.8;
+     
+}
+#confirmApplicationHead{
+      display: flex;
+      justify-content: center;
+      height: 10%;
+      margin-top: 30px;
+      font-size: 42px;
+      font-weight: 400;
+}
+#confirmApplicationText{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #c2bfbf;
+      height: 50%;
+      width: 99%;
+      margin-top: 30px;
+      font-size: 24px;
+      font-weight: 400;
+      opacity: 0.6;
+}
+#confirmApplicationButton{
+      display: flex;
+      margin-top: 20px;
+}
+
+#accept{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-image: url("./svg/接受.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-right: 120px;
+      border: none;  
+      cursor: pointer; 
+
+}
+
+#reject{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-image: url("./svg/拒绝.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-left: 120px;
+      border: none;   
+      cursor: pointer;
+}
+
+#sent{
+      opacity: 0;
+      transition: opacity 0.4s ease;
+}
+
+#sent.show{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      left: 30%;
+      bottom: 30%;
+      height: 40vh;
+      width: 40vw;
+      border-radius: 10px;
+      background-color: #ebeae6;
+      opacity: 0.8;
+     
+}
+
+#sentHead{
+        display: flex;
+        justify-content: center;
+        height: 10%;
+        margin-top: 30px;
+        font-size: 42px;
+        font-weight: 400;
+}
+#sentText{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #c2bfbf;
+        height: 50%;
+        width: 99%;
+        margin-top: 30px;
+        font-size: 24px;
+        font-weight: 400;
+        opacity: 0.6;
+}
+
+  
